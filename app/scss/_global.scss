@@ -1,0 +1,104 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+body {
+    overflow-x: hidden;
+    min-width: 320px;
+    position: relative;
+    color: #fff;
+    @extend %ubuntu-light;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.page-section {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('../images/page__bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    padding: 75px 0 50px;
+
+    &::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+    }
+}
+
+.title {
+    @extend %sf-regular;
+    font-size: 44px;
+    line-height: 53px;
+    padding-top: 200px;
+    padding-left: 25px;
+    margin-bottom: 55px;
+}
+
+.scroll__btn {
+    padding: 13px 0 30px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+.fp-watermark {
+    display: none !important;
+}
